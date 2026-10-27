@@ -1,0 +1,109 @@
+\doxysection{Iterator Class Reference}
+\hypertarget{class_iterator}{}\label{class_iterator}\index{Iterator@{Iterator}}
+
+
+\doxylink{class_iterator}{Iterator} umożliwiający przechodzenie po węzłach listy.  
+
+
+
+
+{\ttfamily \+\#include $<$Iterator.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_iterator_adcc109c06c32f3226d612d4f3d093e45}{Iterator}} (\doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}start=nullptr)
+\begin{DoxyCompactList}\small\item\em Tworzy iterator wskazujący na podany węzeł. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_iterator_a400bdf205d478130441369d2399a496e}{istnieje}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy iterator wskazuje na element. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_iterator_a2672067803a443eb67519a60e9dc28fc}{wartosc}} () const
+\begin{DoxyCompactList}\small\item\em Zwraca wartość aktualnego elementu. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_iterator_ab7d68e1d079d9304bbffd105e4ff2aa0}{nastepny}} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do następnego elementu. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_iterator_a8fa89a31456870eefdce1a860b8bb09e}{poprzedni}} ()
+\begin{DoxyCompactList}\small\item\em Przechodzi do poprzedniego elementu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_iterator}{Iterator} umożliwiający przechodzenie po węzłach listy. 
+
+\label{class_iterator_doc-constructors}
+\Hypertarget{class_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_iterator_adcc109c06c32f3226d612d4f3d093e45}\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily \label{class_iterator_adcc109c06c32f3226d612d4f3d093e45} 
+Iterator::\+\+Iterator (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_node}{Node}} \texorpdfstring{$\ast$}{*}}]{start}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Tworzy iterator wskazujący na podany węzeł. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Początkowy węzeł, domyślnie nullptr. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_iterator_doc-func-members}
+\Hypertarget{class_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_iterator_a400bdf205d478130441369d2399a496e}\index{Iterator@{Iterator}!istnieje@{istnieje}}
+\index{istnieje@{istnieje}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{istnieje()}{istnieje()}}
+{\footnotesize\ttfamily \label{class_iterator_a400bdf205d478130441369d2399a496e} 
+bool Iterator::\+istnieje (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy iterator wskazuje na element. 
+
+\begin{DoxyReturn}{Returns}
+true, jeśli element istnieje. 
+\end{DoxyReturn}
+\Hypertarget{class_iterator_ab7d68e1d079d9304bbffd105e4ff2aa0}\index{Iterator@{Iterator}!nastepny@{nastepny}}
+\index{nastepny@{nastepny}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{nastepny()}{nastepny()}}
+{\footnotesize\ttfamily \label{class_iterator_ab7d68e1d079d9304bbffd105e4ff2aa0} 
+void Iterator::\+nastepny (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przechodzi do następnego elementu. 
+
+\Hypertarget{class_iterator_a8fa89a31456870eefdce1a860b8bb09e}\index{Iterator@{Iterator}!poprzedni@{poprzedni}}
+\index{poprzedni@{poprzedni}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{poprzedni()}{poprzedni()}}
+{\footnotesize\ttfamily \label{class_iterator_a8fa89a31456870eefdce1a860b8bb09e} 
+void Iterator::\+poprzedni (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Przechodzi do poprzedniego elementu. 
+
+\Hypertarget{class_iterator_a2672067803a443eb67519a60e9dc28fc}\index{Iterator@{Iterator}!wartosc@{wartosc}}
+\index{wartosc@{wartosc}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{wartosc()}{wartosc()}}
+{\footnotesize\ttfamily \label{class_iterator_a2672067803a443eb67519a60e9dc28fc} 
+int Iterator::\+wartosc (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Zwraca wartość aktualnego elementu. 
+
+\begin{DoxyReturn}{Returns}
+Wartość elementu. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std::\+out\+\_\+of\+\_\+range} & Gdy iterator nie wskazuje na element. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_iterator_8h}{Iterator.\+h}}\item 
+\doxymbox{\hyperlink{_iterator_8cpp}{Iterator.\+cpp}}\end{DoxyCompactItemize}

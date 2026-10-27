@@ -1,0 +1,58 @@
+\doxysection{Lista\+Dwukierunkowa.\+h}
+\hypertarget{_lista_dwukierunkowa_8h_source}{}\label{_lista_dwukierunkowa_8h_source}\doxymbox{\hyperlink{_lista_dwukierunkowa_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ LISTA\_DWUKIERUNKOWA\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ LISTA\_DWUKIERUNKOWA\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_node_8h}{Node.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_iterator_8h}{Iterator.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{ListaDwukierunkowa}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_node}{Node}}*\ head;\ }
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_node}{Node}}*\ tail;\ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{ListaDwukierunkowa}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{\string~ListaDwukierunkowa}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Lista\ zarządza\ pamięcią\ węzłów,\ dlatego}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ wyłączamy\ niebezpieczne\ kopiowanie\ płytkie.}}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a84f7e1dbb0256f33ca7a53e23d855bf1}{ListaDwukierunkowa}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{ListaDwukierunkowa}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{ListaDwukierunkowa}}\&\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a9512114141565f585498b9680c132e50}{operator=}}(}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a5171fe8d7617c75381a2021fc73dfd2d}{ListaDwukierunkowa}}\&}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_ae913c3aa75953349dbd573a673890959}{dodaj\_P}}(\textcolor{keywordtype}{int}\ wart);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_aa8b3052187f3926180fff2d734eaa595}{dodaj\_K}}(\textcolor{keywordtype}{int}\ wart);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a49dd2d159db8a16f587a46d9569440ec}{dodaj\_i}}(\textcolor{keywordtype}{int}\ wart,\ \textcolor{keywordtype}{int}\ indeks);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a89e10a2d5c8f73db46fe14f2fbe89316}{usun\_P}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_ad9208dcaba890ec8290a1b21e6aa6ac2}{usun\_K}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_ad4352743ae8739a75b0ea419e0991876}{usun}}(\textcolor{keywordtype}{int}\ indeks);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_aa465455ce8729c26e0ec16616ef98461}{wyswietl}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a14e9cdbdde893b8e94546ed4dbfd4c18}{wyswietlOdwrotnie}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a6430e31738c16899d0cd9246e83f123f}{wyswietlNastepny}}(\textcolor{keywordtype}{int}\ indeks)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a62953792685b2ad6215b660351f8572e}{wyswietlPoprzedni}}(\textcolor{keywordtype}{int}\ indeks)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_aa8dbd2961e855546022ec866f7f975f5}{wyczysc}}();}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \ \ \ \ \doxymbox{\hyperlink{class_iterator}{Iterator}}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_af0576b71712ee849c2fe46d644e3a88c}{poczatek}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00116\ \ \ \ \ \doxymbox{\hyperlink{class_iterator}{Iterator}}\ \doxymbox{\hyperlink{class_lista_dwukierunkowa_a53c3c80b4c9a47dbb79bea591c14c762}{koniec}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
